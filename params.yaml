@@ -1,0 +1,33 @@
+data:
+  raw_train_path: "data/raw/train.csv"
+  raw_later_path: "data/raw/later.csv"
+  holdout_features_path: "data/raw/holdout_features.csv"
+  cleaned_train_path: "data/processed/cleaned_train.csv"
+  target_col: "wait_min"
+  numeric_features:
+    - "patients_ahead"
+    - "doctors_on_duty"
+    - "arrival_hour"
+    - "avg_consult_min"
+    - "lab_tests_pending"
+    - "distance_km"
+  categorical_features:
+    - "department"
+    - "wing"
+  group_column: "wing"
+
+model:
+  experiment_name: "OPD_Waiting_Time_MP255"
+  registered_model_name: "mp255_opd_predictor"
+  random_state: 42
+  test_size: 0.2
+  v2_later_train_ratio: 0.70
+  promotion_threshold: 0.15
+
+service:
+  host: "0.0.0.0"
+  port: 8000
+  image_name: "mp255-api:1.0"
+  deployment_name: "mp255-api"
+  service_name: "mp255-svc"
+  replicas: 3

@@ -1,0 +1,21 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+env/
+.venv/
+.pytest_cache/
+
+# MLflow model artifacts directory (mlflow.db SQLite file IS committed)
+mlruns/
+mlartifacts/
+
+# Raw CSVs tracked by DVC (must not be committed to Git)
+data/train.csv
+data/later.csv
+data/holdout_features.csv
+data/raw/train.csv
+data/raw/later.csv
