@@ -17,7 +17,6 @@
 | **S24CSEU2867** | Retiksingh | | Data Lead |
 | **S24CSEU0606** | NishikaUpadhyay | nishika841 | Model Lead |
 | **S24CSEU0571** | SupriyaSharma | | Service Lead |
-| **S24CSEU0576** | SwetabhAnand | | Ops Lead |
 
 ---
 
