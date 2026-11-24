@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mp255-svc
+  labels:
+    app: mp255-api
+spec:
+  type: ClusterIP
+  selector:
+    app: mp255-api
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8000
+      protocol: TCP
