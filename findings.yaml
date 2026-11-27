@@ -33,21 +33,21 @@ tracking:
   experiment_name: OPD_Waiting_Time_MP255
   best_run_id: 2e0ab18f45b542abb556911fadfd5b6e
   registered_model_name: mp255_opd_predictor
-  champion_version: 1
+  champion_version: 2
 monitoring:
   psi:
-    patients_ahead: null
-    doctors_on_duty: null
-    arrival_hour: null
-    avg_consult_min: null
-    lab_tests_pending: null
-    distance_km: null
-  most_drifted_feature: null
+    patients_ahead: 4.5141
+    doctors_on_duty: 0.0548
+    arrival_hour: 0.0391
+    avg_consult_min: 0.0559
+    lab_tests_pending: 0.0204
+    distance_km: 0.0422
+  most_drifted_feature: patients_ahead
   mae_by_group:
-    Old Wing: null
-    New Wing: null
-    Annexe: null
-  worst_served_group: null
-  mae_v1_on_check: null
-  mae_v2_on_check: null
-  decision: null
+    Annexe: 7.976
+    New Wing: 42.6623
+    Old Wing: 8.6142
+  worst_served_group: New Wing
+  mae_v1_on_check: 17.6994
+  mae_v2_on_check: 11.4415
+  decision: promote
